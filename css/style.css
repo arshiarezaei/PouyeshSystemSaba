@@ -9,8 +9,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -21,13 +21,13 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
 	line-height: 1;
-    
+
 }
 ol, ul {
 	list-style: none;
@@ -49,35 +49,6 @@ table {
 
 h1{
   font-size: 23px;
-}
-
-.w-25 {
-  width: 25% !important;
-}
-
-.w-75 {
-  width: 75% !important;
-}
-
-.w-100 {
-  width: 100% !important;
-}
-
-.h-100 {
-  height: 100% !important;
-}
-
-.vw-25 {
-  width: 25vw !important;
-}
-
-.vw-100 {
-  width: 100vw !important;
-}
-
-
-.vh-100 {
-  height: 100vh !important;
 }
 
 .pos-absolute {
@@ -125,22 +96,6 @@ h1{
   left: 0 !important;
 }
 
-.clearfix { 
-  display: inline-block;
-}
-
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: "";
-  clear: both;
-  height: auto;
-}
- 
-* {
-  box-sizing: border-box; 
-}
 
 
 body {
@@ -196,8 +151,8 @@ body {
   text-decoration: none;
   padding: 10px;
   transition: color 0.4s ease 0s;
-  
-} 
+
+}
 
 .logo-container {
   display: inline-flex;
@@ -332,6 +287,42 @@ body {
   color: #edcd1f !important;
 }
 
+
+.service-card {
+	display: block;
+
+}
+
+.image-service{
+	width:100%;
+	height: 450px;
+}
+
+#about-p{
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.t-m{
+		margin-top: 25px;
+		margin-bottom: 25px;
+}
+.t-shift{
+	margin-top: 25px;
+
+}
+ /* #image-person{
+	 background-color: blue;
+  }  */
+ .image-project{
+	 width:100%;
+	 height: 250px;
+	 background-color:blue;
+ }
+ #app-contact{
+	 margin-bottom: 50px;
+ }
+
+
 /* responsive */
 @media only screen and (max-width: 768px){
   .nav {
@@ -350,6 +341,10 @@ body {
   .nav{
     display: none;
   }
+
+	/* .service-card{
+			margin: auto 10px;
+	} */
 }
 
 @media only screen and (min-width: 768px){
@@ -359,13 +354,13 @@ body {
 }
 
 @media only screen and (min-width: 1200px){
-  
+
 }
 
-/* 
+/*
 ---------------------------------------------
 preloader
---------------------------------------------- 
+---------------------------------------------
 */
 #preloader {
   overflow: hidden;
