@@ -11,11 +11,12 @@
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/style.css">
 
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
   <title>Pouyesh System Saba</title>
 
 </head>
 
-<body style='background-color: #cacaca;'>
+<body style='background-color: rgb(255,255,255);'>
 
   <div id="preloader">
     <div class="jumper">
@@ -34,9 +35,11 @@
             <span>Menu</span>
           </a>
 
-          <div class="w-25 logo-container">
-            <div class="logo">
+          <div class="logo-container">
+            <div class="logo d-inline-flex flex-column align-items-center">
               <h1><a>Pouyesh System Saba</a></h1>
+                  <p id="shift-low">Next Gen IT systems</p>
+
             </div>
           </div>
 
@@ -46,7 +49,7 @@
                 <li><a href="#welcome" class="active nav-link">Home</a></li>
                 <li><a href="#app-services" class="nav-link">Service</a></li>
                 <li><a href="#app-about" class="nav-link">About</a></li>
-                <li><a href="#app-projects" class="nav-link">Projects</a></li>
+                <li><a href="#app-projects" class="nav-link">Parent</a></li>
                 <li><a href="#app-contact" class="nav-link">Contact</a></li>
               </ul>
             </nav>
@@ -59,22 +62,22 @@
 
   <section id='app-services' >
     <div class="container">
-      <h1 class="t-m">services</h1>
+          <h1 class="t-m "><strong class="service-s">Services</strong></h1>
       <div class="row">
 
-              <div class="col-sm-12 col-md-6 col-lg-4 service-card " >
-                 <img class="image-service"/>
-                <h2>legacy system modernization</h2>
+              <div class="col-sm-12 col-md-6 col-lg-4 service-card  d-inline-flex flex-column align-items-center " >
+                 <img class="image-service" src="" >
+                <h2>Legacy system modernization</h2>
               </div>
 
-              <div class=" col-sm-12 col-md-6 col-lg-4 service-card " >
-                 <img class="image-service"/>
+              <div class=" col-sm-12 col-md-6 col-lg-4 service-card d-inline-flex flex-column align-items-center" >
+                 <img class="image-service" src=""/>
                 <h2>Data Engineering</h2>
               </div>
 
-              <div class="col-sm-12 col-md-6 col-lg-4 service-card " >
-                 <img class="image-service"/>
-                <h2>Software Testing</h2>
+              <div class="col-sm-12 col-md-6 col-lg-4 service-card d-inline-flex flex-column align-items-center " >
+                 <img class="image-service" src=""/>
+                <h2> Software Testing </h2>
               </div>
       </div>
     </div>
@@ -83,7 +86,7 @@
 
   <section id='app-about' >
     <div class="container">
-      <h1 class="t-m">About</h1>
+      <h1 class="t-m "><strong class="service-s">About</strong></h1>
 
       <div class="row">
         <div class="col-12" >
@@ -93,78 +96,96 @@
 
         <div class="row justify-content-center">
 
-          <div class=" col-12 col-sm-4 col-md-4 col-lg-4 d-inline-flex flex-column align-items-center mt-20px mb-20px">
-            <img id="image-person" src="/img/First.jpg" alt="" class="rounded-circle" width="200" height="200">
-            <h1 class="t-m">Arshia Rezaie - Founder </h1>
+          <div class=" col-12 col-sm-4 col-md-4 col-lg-4 d-inline-flex flex-column align-items-center ">
+            <img id="image-person" src="/img/First.jpg" alt="" class="rounded-circle" width="200" height="200"  >
+            <h1 class="t-m"><strong>Arshia Rezaie-Founder </strong> </h1>
             <div class="align-self-start">
-              <p> Education Background:</p>
-              <p> Mechanics  & Computer Engineering Sharif University of Technology </p>
-              <p class="t-shift"> Skills:</p>
-              <p>Project Management, Software Design</p>
+              <p class="shift-low" >Education Background: </p>
+              <p> Mechanics  & Computer Engineering</p>
+              <p> Sharif University of Technology </p>
+            <p class="t-shift shift-low">Skills:</p>
+              <p class="t-down">Project Management, Software Design</p>
           </div>
         </div>
 
-          <div class=" col-12 col-sm-4 col-md-4 col-lg-4 d-inline-flex flex-column align-items-center mt-20px mb-20px">
-        <img id="image-person" src="img/secund.jpg" alt="" class="rounded-circle" width="200" height="200">
-        <h1 class="t-m">Farnaz Yousefi - Co-Founder </h1>
+          <div class=" col-12 col-sm-4 col-md-4 col-lg-4 d-inline-flex flex-column align-items-center ">
+        <img id="image-person" src="img/secund3.jpg" alt="" class="rounded-circle" width="200" height="200" >
+        <h1 class="t-m"><strong>Farnaz Yousefi-CoFounder </strong></h1>
           <div class="align-self-start">
-            <p >Education Background:  </p>
-            <p> Ph.D CS  John Hopkins University</p>
-            <p> USA (2019-current) </p>
-            <p class="t-shift"> Skills:  </p>
-            <p>Project Management, Software Design, Software Testing</p>
+            <p class="shift-low">Education Background:</p>
+            <p> Ph.D Computer Science</p>
+            <p>  John Hopkins University USA (2019-current) </p>
+            <p class="t-shift shift-low"> Skills:</p>
+            <p class="t-down">Project Management, Software Design, Software Testing</p>
           </div>
           </div>
 
 
         <div class="row justify-content-center">
 
-          <div class=" col-12 col-sm-4 col-md-4 col-lg-4 d-inline-flex flex-column align-items-center mt-20px mb-20px">
-        <img id="image-person" src="img/third.jpg" alt="" class="rounded-circle" width="200" height="200">
-        <h1 class="t-m"> Ali Cheraghi - </h1>
+          <div class=" col-12 col-sm-4 col-md-4 col-lg-4  d-inline-flex flex-column align-items-center ">
+        <img id="image-person" src="img/third3.jpg" alt="" class="rounded-circle" width="200" height="200">
+        <h1 class="t-m"> <strong>Ali Cheraghi</strong> </h1>
           <div class="align-self-start">
-            <p class="t-m">Credentials: </p>
-            <p class="t-m"> skils: </p>
+              <p class="shift-low" >Education Background: </p>
+              <p>Electrical Engineering</p>
+
+              <p class="t-shift shift-low"> Skills:</p>
+              <p class="t-down">Senior Front-end developer</p>
+
           </div>
           </div>
 
-          <div class=" col-12 col-sm-4 col-md-4 col-lg-4 d-inline-flex flex-column align-items-center mt-20px mb-20px">
+          <div class=" col-12 col-sm-4 col-md-4 col-lg-4  d-inline-flex flex-column align-items-center ">
         <img id="image-person" src="" alt="" class="rounded-circle" width="200" height="200">
-        <h1 class="t-m">kamand  dastmalchi - jonior</h1>
+        <h1 class="t-m"> <strong>Milad Heydary</strong> </h1>
           <div class="align-self-start">
-            <p class="t-m">Credentials: </p>
-            <p class="t-m"> skils: </p>
+            <p class="shift-low" >Education Background:</p>
+            <p>computer engineering</p>
+            <p>Sharif University of Technology</p>
+            <p class="t-shift shift-low">Skills:</p>
+            <p class="t-down">Senior developer</p>
+
           </div>
           </div>
 
-        <div class="row justify-cantent-center">
+        <div class="row justify-content-around w-100 pr-md-5 pl-md-5 ">
 
-          <div class=" col-12 col-sm-4 col-md-4 col-lg-4 d-inline-flex flex-column align-items-center mt-20px mb-20px">
+          <div class=" col-12 col-sm-4 col-md-4 col-lg-4 d-inline-flex flex-column align-items-center ">
         <img id="image-person" src="" alt="" class="rounded-circle" width="200" height="200">
-        <h1 class="t-m">kamand  dastmalchi - jonior</h1>
+          <h1 class="t-m"><strong>Kamand Dastmalchi</strong> </h1>
           <div class="align-self-start">
-            <p class="t-m">Credentials:</p>
-            <p class="t-m"> skils: </p>
+            <p class="shift-low" >Education Background:</p>
+            <p> Computer Science </p>
+            <p> Tehran Polytechnic</p>
+            <p class="shift-low t-shift">Skills:</p>
+            <p class="t-down">Front-end developer</p>
           </div>
           </div>
 
 
-          <div class=" col-12 col-sm-4 col-md-4 col-lg-4 d-inline-flex flex-column align-items-center mt-20px mb-20px">
+          <div class=" col-12 col-sm-4 col-md-4 col-lg-4 d-inline-flex flex-column align-items-center">
         <img id="image-person" src="" alt="" class="rounded-circle" width="200" height="200">
-        <h1 class="t-m">kamand  dastmalchi - jonior</h1>
+        <h1 class="t-m"> <strong>Fatemeh Borzoe</strong> </h1>
           <div class="align-self-start">
-            <p class="t-m">Credentials: </p>
-            <p class="t-m"> skils: </p>
+            <p class="shift-low">Education Background:</p>
+            <p>Software egineering</p>
+          <p> Azad University tehran North</p>
+            <p class=" shift-low t-shift"> Skills:</p>
+            <p class="t-down"> Front-end developer</p>
           </div>
           </div>
 
 
-          <div class=" col-12 col-sm-4 col-md-4 col-lg-4 d-inline-flex flex-column align-items-center mt-20px mb-20px">
-        <img id="image-person" src="" alt="" class="rounded-circle" width="200" height="200">
-        <h1 class="t-m">kamand  dastmalchi - jonior</h1>
+          <div class=" col-12 col-sm-4 col-md-4 col-lg-4 d-inline-flex flex-column align-items-center ">
+        <img id="image-person" src="img/forth2.jpg" alt="" class="rounded-circle" width="200" height="200">
+        <h1 class="t-m"> <strong>Sina Safari</strong> </h1>
           <div class="align-self-start">
-            <p class="t-m">Credentials: </p>
-            <p class="t-m"> skils: </p>
+            <p class="shift-low">Education Background:</p>
+            <p>Software egineering</p>
+          <p> Azad University tehran North</p>
+            <p class="shift-low t-shift">Skills:</p>
+            <p class="t-down">Front-end developer</p>
           </div>
           </div>
 
@@ -176,28 +197,22 @@
 
   <section id='app-projects' >
     <div class="container">
-      <h1 class="t-m">app project</h1>
+        <h1 class="t-m "><strong class="service-s">partners</strong></h1>
 
-      <div class="row">
+        <div class="row justify-content-center ">
+          <div class="col-12 col-sm-3 col-md-3 col-lg-2 service-card  " >
+             <img class="image-project" src="/img/siminor2.png "/>
+          </div>
+          <div class="col-12 col-sm-3 col-md-3 col-lg-2 service-card " >
+             <img class="image-project" src="/img/parsia.png"/>
+          </div>
+          <div class="col-12 col-sm-3 col-md-3 col-lg-2 service-card " >
+             <img class="image-project" src="/img/box.jpg"/>
+          </div>
+          <!-- <div class="col-6 col-sm-3 col-md-3 col-lg-3 service-card " >
+             <img class="image-project" src="/img/" />
+          </div> -->
 
-        <div class="col-sm-6 col-md-6 col-lg-6 service-card " >
-           <img class="image-project"/>
-        </div>
-
-        <div class="col-sm-6 col-md-6 col-lg-6 service-card " >
-           <img class="image-project"/>
-        </div>
-      </div>
-
-      <div class="row">
-
-        <div class="col-sm-6 col-md-6 col-lg-6 service-card " >
-           <img class="image-project"/>
-        </div>
-
-        <div class="col-sm-6 col-md-6 col-lg-6 service-card " >
-           <img class="image-project"/>
-        </div>
         </div>
 
     </div>
@@ -206,11 +221,11 @@
   <div id="app-contact">
     <div class="container">
       <div class="row">
-        <div class="col-12 text-center mb-5" data-aos="fade-up" data-aos-delay="">
-          <div class="block-heading-1">
-            <span>Get In Touch</span>
-            <h2>Contact Us</h2>
-          </div>
+        <div class="col-12 mb-5" data-aos="fade-up" data-aos-delay="">
+
+            <h1 class="t-m "><strong class="service-s">Contact</strong></h1>
+
+
         </div>
       </div>
 
@@ -222,7 +237,7 @@
                 <input type="text" class="form-control" placeholder="First name">
               </div>
               <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="First name">
+                <input type="text" class="form-control" placeholder="Last name">
               </div>
             </div>
 
@@ -240,13 +255,13 @@
             </div>
             <div class="form-group row">
               <div class="col-md-6 mr-auto">
-                <input type="submit" class="text-black py-3 px-5" value="Send Message">
+                <input id="bot-style" type="submit" class="text-black py-3 px-5" value="Send Message">
               </div>
             </div>
           </form>
         </div>
         <div class="col-lg-4 ml-auto" data-aos="fade-up" data-aos-delay="200">
-          <div class="bg-white p-3 p-md-5">
+           <div class="c-info p-3 p-md-5">
             <h3 class="text-black mb-4">Contact Info</h3>
             <ul class="list-unstyled footer-link">
               <li class="d-block mb-3">

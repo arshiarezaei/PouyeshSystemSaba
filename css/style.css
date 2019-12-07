@@ -27,6 +27,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1rem;
 
 }
 ol, ul {
@@ -46,6 +48,15 @@ table {
 }
 /*RESET CSS END*/
 
+
+
+/* override stgyle */
+strong{
+	font-weight: bolder;
+	 font-size: 1.6rem;
+}
+
+/* end */
 
 h1{
   font-size: 23px;
@@ -287,15 +298,21 @@ body {
   color: #edcd1f !important;
 }
 
+/* #app-services{
 
+}
+#app-services > div > h1 > strong {
+		border-bottom:red 2px solid;
+
+} */
 .service-card {
 	display: block;
 
 }
 
 .image-service{
-	width:100%;
-	height: 450px;
+	width:200px;
+	height: 200px;
 }
 
 #about-p{
@@ -310,18 +327,46 @@ body {
 	margin-top: 25px;
 
 }
- /* #image-person{
-	 background-color: blue;
-  }  */
+#shift-low{
+	margin-top:10px;
+	font-size: 0.7rem;
+}
+.shift-low{
+	margin-bottom:10px;
+	font-size: 1.3rem;
+}
+ .t-down{
+	 margin-bottom: 15px;
+ }
  .image-project{
 	 width:100%;
-	 height: 250px;
-	 background-color:blue;
+	 height: auto;
+	 background-color:transparent;
+	 display: flex;
+
+
+
  }
  #app-contact{
 	 margin-bottom: 50px;
  }
 
+.service-s{
+
+ border-bottom: #edcd1f 10px solid;
+}
+.c-info{
+	background-color: #1e2d3b;
+	color: white;
+	 border-radius: 8px;
+}
+
+#bot-style{
+	border-radius: 8px;
+	background-color: #1e2d3b;
+	color: white ;
+
+}
 
 /* responsive */
 @media only screen and (max-width: 768px){
@@ -342,14 +387,22 @@ body {
     display: none;
   }
 
+  .logo-container{
+    width: 70% !important;
+    /* display: none; */
+  }
 	/* .service-card{
 			margin: auto 10px;
-	} */
+  } */
+  
 }
 
 @media only screen and (min-width: 768px){
   .nav{
     display: flex !important;
+  }
+  .logo-container{
+    width: 25% !important;
   }
 }
 
