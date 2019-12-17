@@ -55,6 +55,7 @@
       $(".nav").removeClass('menu-list');
       $(".main-nav").removeClass('sc-white');
       $("div.bg").removeClass('sc-white');
+      $('.nav').slideUp(200);
 
       $('a').each(function () {
 
