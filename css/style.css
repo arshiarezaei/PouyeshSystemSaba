@@ -314,7 +314,8 @@ body {
 
 .about-p{
 	margin-top: 25px;
-	margin-bottom: 25px;
+  margin-bottom: 25px;
+  line-height: 1.5rem;
 }
 .t-m{
 		margin-top: 25px;
@@ -327,7 +328,8 @@ body {
 
 
 .shift-low{
-	margin-bottom:10px;
+  margin-bottom:10px;
+  font-weight: bolder;
 	font-size: 1.3rem;
 }
  .t-down{
@@ -348,17 +350,19 @@ body {
 
 .service-s{
  border-bottom: #edcd1f 10px solid;
+ 
 }
-.c-info{
+/* .c-info{
 	background-color: #1e2d3b;
 	color: white;
 	 border-radius: 8px;
-}
+} */
 
 .bot-style{
+ 
 	border-radius: 8px;
 	background-color: #1e2d3b;
-  color: white ;
+  color: #edcd1f ;
   font-size: 16px
 
 }
@@ -394,7 +398,7 @@ body {
   
 
   .image-project{
-    width:50% !important ;
+    width:65% !important ;
      display: block;
     margin: 0 auto;
     
