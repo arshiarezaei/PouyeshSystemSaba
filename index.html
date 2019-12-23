@@ -6,15 +6,128 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/bstyles.css">
 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
   <title>Pouyesh System Saba</title>
+
+
+  <link rel="icon" href="favicon.ico" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#1e2d3b" />
+
+  <link rel="apple-touch-icon" href="favicon.ico" />
+
+  <link rel="manifest" href="manifest.json" />
+
+
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  
+  <meta name="language" content="EN" />
+
+  <meta name="author" content="Ali Cheraghi, alicheraghi148@gmail.com" />
+
+  <meta http-equiv="Expires" content="0" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Cache-Control" content="no-cache" />
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+  <style>
+    #preloader {
+      overflow-y: hidden;
+      background-image: linear-gradient(135deg, #273b4e 0%, #1e2d3b 100%);
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      position: fixed;
+      z-index: 9999;
+      color: #fff;
+      width: 100vw;
+      height: 100vh !important;
+    }
+
+    #preloader .jumper {
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      display: block;
+      position: fixed;
+      margin: auto;
+      width: 50px;
+      height: 50px;
+    }
+
+    #preloader .jumper>div {
+      background-color: #fff;
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      position: absolute;
+      opacity: 0;
+      width: 50px;
+      height: 50px;
+      -webkit-animation: jumper 1s 0s linear infinite;
+      animation: jumper 1s 0s linear infinite;
+    }
+
+    #preloader .jumper>div:nth-child(2) {
+      -webkit-animation-delay: 0.33333s;
+      animation-delay: 0.33333s;
+    }
+
+    #preloader .jumper>div:nth-child(3) {
+      -webkit-animation-delay: 0.66666s;
+      animation-delay: 0.66666s;
+    }
+
+    @-webkit-keyframes jumper {
+      0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+      }
+
+      5% {
+        opacity: 1;
+      }
+
+      100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+      }
+    }
+
+    @keyframes jumper {
+      0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+      }
+
+      5% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+  </style>
 
 </head>
 
-<body style='background-color: #cacaca;'>
+<body style='background-color: rgb(255,255,255);'>
 
   <div id="preloader">
     <div class="jumper">
@@ -27,25 +140,27 @@
   <section id='welcome' class="header vh-100">
     <header class="header-nav">
       <div class="container">
-        <div class="row h-100 pos-relative">
+        <div class="row h-100 position-relative">
 
           <a class="menu-trigger">
             <span>Menu</span>
           </a>
 
-          <div class="w-25 logo-container">
-            <div class="logo">
+          <div class="logo-container">
+            <div class="logo d-inline-flex flex-column align-items-center">
               <h1><a>Pouyesh System Saba</a></h1>
+              <p>Next Gen IT systems</p>
+
             </div>
           </div>
 
           <div class="w-75 main-nav-container">
-            <nav class="main-nav">
+            <nav class="main-nav justify-content-center h-100">
               <ul class="nav">
                 <li><a href="#welcome" class="active nav-link">Home</a></li>
                 <li><a href="#app-services" class="nav-link">Service</a></li>
                 <li><a href="#app-about" class="nav-link">About</a></li>
-                <li><a href="#app-projects" class="nav-link">Projects</a></li>
+                <li><a href="#app-projects" class="nav-link">partners</a></li>
                 <li><a href="#app-contact" class="nav-link">Contact</a></li>
               </ul>
             </nav>
@@ -55,46 +170,180 @@
       </div>
     </header>
   </section>
-
-  <section id='app-services' style='height: 100vh;'>
+  <!-- app services section -->
+  <section id='app-services'>
     <div class="container">
+      <h1 class="t-m "><strong class="service-s">Services</strong></h1>
       <div class="row">
 
-        <h1>services</h1>
-      </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 service-card  d-inline-flex flex-column align-items-center ">
+          <img class="image-service" src="img/one.png" alt="Logo">
+          <h2>Legacy system modernization</h2>
+        </div>
 
-    </div>
+        <div class=" col-sm-12 col-md-6 col-lg-4 service-card d-inline-flex flex-column align-items-center">
+          <img class="image-service" src="img/two.png" alt="Logo" />
+          <h2>Data Engineering</h2>
+        </div>
 
-  </section>
-
-  <section id='app-about' style='height: 100vh;'>
-    <div class="container">
-      <div class="row">
-
-        <h1>about</h1>
-      </div>
-    </div>
-
-  </section>
-
-  <section id='app-projects' style='height: 100vh;'>
-    <div class="container">
-      <div class="row">
-
-        <h1>app project</h1>
+        <div class="col-sm-12 col-md-6 col-lg-4 service-card d-inline-flex flex-column align-items-center ">
+          <img class="image-service" src="img/three.png" alt="Logo" />
+          <h2> Software Testing </h2>
+        </div>
       </div>
     </div>
-
   </section>
+  <!-- end of app services section -->
 
-  <div id="app-contact">
+  <!-- app about section -->
+  <section id='app-about'>
     <div class="container">
-      <div class="row">
-        <div class="col-12 text-center mb-5" data-aos="fade-up" data-aos-delay="">
-          <div class="block-heading-1">
-            <span>Get In Touch</span>
-            <h2>Contact Us</h2>
+      <h1 class="t-m "><strong class="service-s">About</strong></h1>
+
+      <div class="row about-p">
+        <div class="col-12 ">
+          <p> Saba Pouyesh System was established in January 2018 targeting to produce high
+            quality softwares in the scale of international recognition. A circle of students and graduate student from
+            Sharif University of Technology created the managerial board. Currently, the company is stationed at Sharif University
+            knowledge- based entrepreneurs section.
+            Having its te am knowledge utmost potentiality operated and underling youth employment approach practiced,
+            this company aims to meet its appointed target. </p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+
+        <div class=" col-12 col-sm-4 col-md-4 col-lg-4 d-flex flex-column align-items-center ">
+          <img  src="img/First.jpg" alt=""Arshia Rezaie-Founder class="rounded-circle mt-3" width="150" height="150">
+          <h1 class="t-m"><strong>Arshia Rezaie-Founder </strong> </h1>
+          <div class="align-self-start">
+            <p class="shift-low">Education Background: </p>
+            <p class="mb-1"> Mechanics & Computer Engineering</p class="mb-1">
+            <p> Sharif University of Technology </p>
+            <p class="t-shift shift-low">Skills:</p>
+            <p class="t-down">Project Management, Software Design</p>
           </div>
+        </div>
+
+        <div class=" col-12 col-sm-4 col-md-4 col-lg-4 d-flex flex-column align-items-center ">
+          <img src="img/secund3.jpg" alt="Farnaz Yousefi-CoFounder " class="rounded-circle mt-3" width="150" height="150">
+          <h1 class="t-m"><strong>Farnaz Yousefi-CoFounder </strong></h1>
+          <div class="align-self-start">
+            <p class="shift-low">Education Background:</p>
+            <p class="mb-1"> Ph.D Computer Science</p>
+            <p> John Hopkins University USA (2019-current) </p>
+            <p class="t-shift shift-low"> Skills:</p>
+            <p class="t-down">Project Management,Software Testing</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+
+          <div class=" col-12 col-sm-4 col-md-4 col-lg-4  d-flex flex-column align-items-center ">
+            <img  src="img/third3.jpg" alt="Ali Cheraghi" class="rounded-circle mt-3"width="150" height="150">
+            <h1 class="t-m"> <strong>Ali Cheraghi</strong> </h1>
+            <div class="align-self-start">
+              <p class="shift-low">Education Background: </p>
+              <p class="mb-1">Electrical Engineering</p class="mb-1">
+              <p>Azad University</p>
+              <p class="t-shift shift-low"> Skills:</p>
+              <p class="t-down">Senior Front-end developer</p>
+
+          </div>
+        </div>
+
+          <div class=" col-12 col-sm-4 col-md-4 col-lg-4  d-flex flex-column align-items-center ">
+            <img  src="img/arfa.jpg" alt="Milad Heydary" class="rounded-circle mt-3" width="150" height="150">
+            <h1 class="t-m"> <strong>Arfa Maddi</strong> </h1>
+            <div class="align-self-start">
+              <p class="shift-low">Education Background:</p>
+              <p class="mb-1">computer engineering</p class="mb-1">
+              <p>Sharif University of Technology</p>
+              <p class="t-shift shift-low">Skills:</p>
+              <p class="t-down">senior full stack and system architecture designer</p>
+
+            </div>
+          </div>
+
+          <div class=" col-12 col-sm-4 col-md-4 col-lg-4  d-flex flex-column align-items-center ">
+            <img  src="" alt="Milad Heydary" class="rounded-circle mt-3" width="150" height="150">
+            <h1 class="t-m"> <strong>Milad Heydary</strong> </h1>
+            <div class="align-self-start">
+              <p class="shift-low">Education Background:</p>
+              <p class="mb-1">computer engineering</p class="mb-1">
+              <p>Sharif University of Technology</p>
+              <p class="t-shift shift-low">Skills:</p>
+              <p class="t-down">Senior developer</p>
+
+          </div>
+        </div>
+      </div>
+
+          <div class="row justify-content-center">
+
+            <div class=" col-12 col-sm-4 col-md-4 col-lg-4  d-flex flex-column align-items-center  ">
+              <img  src="" alt="Kamand Dastmalchi" class="rounded-circle mt-3" width="150" height="150">
+              <h1 class="t-m"> <strong>Kamand Dastmalchi</strong> </h1>
+              <div class="align-self-start">
+                <p class="shift-low">Education Background: </p>
+                <p class="mb-1">Computer Science </p>
+                <p>Tehran Polytechnic</p>
+                <p class="t-shift shift-low"> Skills:</p>
+                <p class="t-down">Front-end developer</p>
+  
+              </div>
+            </div>
+  
+            <div class=" col-12 col-sm-4 col-md-4 col-lg-4  d-inline-flex flex-column align-items-center ">
+              <img  src="img/forth2.jpg" alt="Sina Safari" class="rounded-circle mt-3" width="150" height="150">
+              <h1 class="t-m"> <strong>Sina Safari</strong> </h1>
+              <div class="align-self-start">
+                <p class="shift-low">Education Background:</p>
+                <p class="mb-1">Software egineering</p class="mb-1">
+                <p> Azad University tehran North</p>
+                <p class="shift-low t-shift">Skills:</p>
+                <p class="t-down">Front-end developer</p>
+  
+              </div>
+            </div>
+
+
+        <!-- </ div> -->
+  </section>
+  <!-- end of app about section -->
+
+  <section id='app-projects' class="mb-5" >
+    <div class="container">
+      <h1 class="t-m "><strong class="service-s">partners</strong></h1>
+
+      <div class="row justify-content-center ">
+        <div class="col-12 col-sm-4 col-md-5 col-lg-2 service-card w-100 ">
+          <img class="image-project" src="" alt="logo" />
+        </div>
+        <div class="col-12 col-sm-4 col-md-5 col-lg-2 service-card w-100">
+          <img class="image-project" src="img/parsia.png" alt="logo" />
+        </div>
+        <div class="col-12 col-sm-4 col-md-5 col-lg-2 service-card w-100">
+          <img class="image-project" src="img/box.jpg" alt="logo" />
+        </div>
+        <!-- <div class="col-6 col-sm-3 col-md-3 col-lg-3 service-card " >
+             <img class="image-project" src="/img/" />
+          </div> -->
+
+      </div>
+
+    </div>
+  </section>
+
+  <div id="app-contact" class="mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mb-5" data-aos="fade-up" data-aos-delay="">
+
+          <h1 class="t-m "><strong class="service-s">Contact</strong></h1>
+
+
         </div>
       </div>
 
@@ -106,7 +355,7 @@
                 <input type="text" class="form-control" placeholder="First name">
               </div>
               <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="First name">
+                <input type="text" class="form-control" placeholder="Last name">
               </div>
             </div>
 
@@ -123,19 +372,21 @@
               </div>
             </div>
             <div class="form-group row">
-              <div class="col-md-6 mr-auto">
-                <input type="submit" class="text-black py-3 px-5" value="Send Message">
+              <div class="col-12 col-sm-6 col-md-5 m-auto d-block">
+                <button class="btn bot-style w-100" type="submit" class="text-black py-5 px-5">
+                  Send Message
+                  </button>
               </div>
             </div>
           </form>
         </div>
         <div class="col-lg-4 ml-auto" data-aos="fade-up" data-aos-delay="200">
-          <div class="bg-white p-3 p-md-5">
+          <div class="p-0">
             <h3 class="text-black mb-4">Contact Info</h3>
             <ul class="list-unstyled footer-link">
               <li class="d-block mb-3">
                 <span class="d-block text-black">Address:</span>
-                <span>34 Street Name, City Name Here, United States</span></li>
+                <span>sharif, box</span></li>
               <li class="d-block mb-3"><span class="d-block text-black">Phone:</span><span>+1 242 4942 290</span></li>
               <li class="d-block mb-3"><span class="d-block text-black">Email:</span><span>info@yourdomain.com</span>
               </li>

@@ -3,7 +3,7 @@
   "use strict";
 
   // Window Resize Mobile Menu Fix
-  // mobileNav();
+  mobileNav();
 
 
   // Scroll animation init
@@ -55,6 +55,7 @@
       $(".nav").removeClass('menu-list');
       $(".main-nav").removeClass('sc-white');
       $("div.bg").removeClass('sc-white');
+      $('.nav').slideUp(200);
 
       $('a').each(function () {
 
@@ -106,7 +107,7 @@
     });
   });
 
-  /*
+  
   // Window Resize Mobile Menu Fix
   $(window).on('resize', function () {
     mobileNav();
@@ -121,5 +122,5 @@
         $(this).find('ul').toggleClass('active');
       }
     });
-  }*/
+  }
 })(window.jQuery);
